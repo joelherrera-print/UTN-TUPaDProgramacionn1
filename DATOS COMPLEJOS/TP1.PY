@@ -137,3 +137,46 @@ while True:
     else:
         print("Opción inválida. Intente de nuevo.")
 
+##Actividad 9
+
+agenda = {
+    ("lunes", "10:00"): "Reunión",
+    ("martes", "15:00"): "Clase de inglés",
+    ("miércoles", "09:30"): "Gimnasio"
+}
+
+
+print("Agenda actual:")
+for clave, evento in agenda.items():
+    print(f"{clave[0].capitalize()} a las {clave[1]} → {evento}")
+
+
+dia = input("Ingrese el día: ").lower()
+hora = input("Ingrese la hora (ej: 10:00): ")
+
+clave = (dia, hora)
+
+if clave in agenda:
+    print(f"Actividad programada: {agenda[clave]}")
+else:
+    print("No hay actividades en ese día y hora.")
+
+##Actividad 10
+
+paises = {
+    "Argentina": "Buenos Aires",
+    "Chile": "Santiago",
+    "Uruguay": "Montevideo",
+    "Paraguay": "Asunción"
+}
+
+invertido = {capital: pais for pais, capital in paises.items()}
+
+print("Diccionario original:")
+print(paises)
+
+print("Diccionario invertido:")
+print(invertido)
+
+
+
