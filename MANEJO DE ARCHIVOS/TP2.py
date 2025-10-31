@@ -90,8 +90,27 @@ print("✅ Producto agregado correctamente.")
 #•	Mostrar confirmación final
 #•	Reabrir el archivo y mostrar su contenido actualizado.
 
+with open("cine.csv", "w") as archivo:
+    archivo.write("La momia\n")
+    archivo.write("IT\n")
+    archivo.write("Casablanca\n")
 
+with open ("cine.csv" , "r") as archivo:
+        print(archivo.read())
 
+with open("cine.csv","r") as f:
+    contenido = f.read()
+    print(contenido)
+
+peli_new = input("Agregar una pelicula nueva:")
+with open("cine.csv" , "a")as archivo:
+    archivo.write(f"{peli_new}\n")
+
+print("Película agregada con éxito!")
+
+with open("cine.csv", "r") as archivo:
+    print(archivo.read())
+  
 #4.	
 #•	Crear un archivo llamado pacientes.csv con los siguientes datos:
 #nombre,edad,turno
