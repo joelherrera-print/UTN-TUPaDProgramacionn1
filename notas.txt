@@ -1,0 +1,3 @@
+Pedro,8
+Lucia,9
+Julián,6
