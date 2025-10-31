@@ -20,7 +20,7 @@ print("Materias ordenadas:", materias)
 #Si no está, muestra un mensaje apropiado
 
 
-alumnos = ["Juan", "María", "Pedro", "Lucía", "Sofía"]
+alumnos = ["Juan", "Maria", "Pedro", "Lucia", "Sofia"]
 nombre = input("Ingrese un nombre: ")
 if nombre in alumnos:
     print(f"{nombre} está en la posición {alumnos.index(nombre)}")
@@ -63,7 +63,7 @@ print("Segundo alimento:", alimentos[1])
 print("Último alimento:", alimentos[-1])
 print("Total de alimentos:", len(alimentos))
 
-#Crea un conjunto con los nombres de tus amigos (algunos repetidos). 
+#Ejercicio 6 - Crea un conjunto con los nombres de tus amigos (algunos repetidos). 
 #Muestra el conjunto para observar el comportamiento con duplicados. 
 #Agrega y elimina un nombre. 
 #Muestra la cantidad total de elementos. 
