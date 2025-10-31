@@ -15,10 +15,10 @@
 #•	Reescribir el archivo desde cero con una nueva lista de tres alumnos distintos.
 #•	Mostrar un mensaje que indique que el contenido anterior fue reemplazado.
 
-with open("notas.txt", "w") as archive:
-    archive.write("Sofia , 9\n")
-    archive.write("Marcos, 7\n")
-    archive.write("Ana , 10\n")
+with open("notas.txt", "w") as archivo:
+    archivo.write("Sofia , 9\n")
+    archivo.write("Marcos, 7\n")
+    archivo.write("Ana , 10\n")
 
 print("Leyendo archivo y mostrando contenido")
 
@@ -38,19 +38,14 @@ with open("notas.txt" , "a") as archive:
             break
         nota_nueva = input("Ingrese su respectiva nota: ")
         archive.write(f"{ingresar_alumnos}.{nota_nueva}\n")
-        print("Alumno agregado correctamente.")
+        print("✅Alumno agregado correctamente.")
 
 with open("notas.txt", "w") as archivo:
     archivo.write("Pedro,8\n")
     archivo.write("Lucia,9\n")
-    archivo.write("Julián,6\n")
+    archivo.write("Santi,6\n")
 
 print("✅ El contenido anterior fue reemplazado por una nueva lista de alumnos.")
-
-
-
-
-
 
 
 
@@ -66,6 +61,27 @@ print("✅ El contenido anterior fue reemplazado por una nueva lista de alumnos.
 #Luego abrir el archivo en modo 'a' (agregar) y escribir la nueva línea sin borrar el contenido anterior.
 #•	Confirmar la actualización
 
+with open("heladeria.csv" , "w") as archivo:
+    archivo.write("Frutilla , 300 , SI\n")
+    archivo.write("Chocolate , 400 , SI\n")
+    archivo.write("Tramontana , 500 , SI\n")
+
+print("Leyendo archivo y mostrando contenido")
+
+with open("heladeria.csv","r") as archivo:
+    for linea in archivo:
+        sabor, precio, disponibilidad = linea.strip().split(",")
+        print(f"SABOR:{sabor} | PRECIO:{precio} | DISPONIBILIDAD:{disponibilidad}\n" )
+
+sabor_nuevo = input("Agregar sabor nuevo: ")
+precio_nuevo = float(input("Agregar su precio: "))
+esta_dispo = input("Si está disponible (si o no): ")
+
+with open("heladeria.csv" , "a") as archivo:
+     archivo.write(f"{sabor_nuevo} , {precio_nuevo} , {esta_dispo}\n")
+
+print("✅ Producto agregado correctamente.")
+
 #3.	
 #•	Crear un archivo llamado cine.csv con tres películas.
 #•	Mostrar el contenido del archivo
@@ -73,6 +89,8 @@ print("✅ El contenido anterior fue reemplazado por una nueva lista de alumnos.
 #•	Agregar una nueva película-Pedir al usuario los datos y agregarlos sin borrar el contenido anterior
 #•	Mostrar confirmación final
 #•	Reabrir el archivo y mostrar su contenido actualizado.
+
+
 
 #4.	
 #•	Crear un archivo llamado pacientes.csv con los siguientes datos:
@@ -84,6 +102,8 @@ print("✅ El contenido anterior fue reemplazado por una nueva lista de alumnos.
 #Si tiene turno (“si” / “no”)
 #Luego escribir esa línea al final del archivo.
 #•	Reabrir el archivo y mostrar el contenido actualizado.
+
+
 
 #5.	
 #•	Crear un archivo llamado excursiones.csv con el siguiente contenido:
