@@ -11,7 +11,7 @@ materias = ["Matemática", "Programación", "Inglés", "Historia", "Biología"]
 materias.append("Física")
 materias.remove("Historia")
 materias.sort()
-print("Ejercicio 1 - Materias ordenadas:", materias)
+print("Materias ordenadas:", materias)
 
 ##Ejercicio 2 – Búsqueda en listas 
 #Crea una lista con los nombres de 5 alumnos. 
@@ -21,7 +21,7 @@ print("Ejercicio 1 - Materias ordenadas:", materias)
 
 
 alumnos = ["Juan", "María", "Pedro", "Lucía", "Sofía"]
-nombre = input("Ejercicio 2 - Ingrese un nombre: ")
+nombre = input("Ingrese un nombre: ")
 if nombre in alumnos:
     print(f"{nombre} está en la posición {alumnos.index(nombre)}")
 else:
@@ -33,7 +33,7 @@ else:
 
 
 numeros = [2, 5, 3, 2, 7, 5, 2, 8, 3]
-num = int(input("Ejercicio 3 - Ingrese un número para contar: "))
+num = int(input("Ingrese un número para contar: "))
 print(f"El número {num} aparece {numeros.count(num)} veces")
 
 #Ejercicio 4 – Tuplas básicas 
@@ -44,7 +44,7 @@ print(f"El número {num} aparece {numeros.count(num)} veces")
 
 
 colores = ("Rojo", "Verde", "Azul", "Amarillo", "Negro")
-print("Ejercicio 4 - Primer color:", colores[0])
+print("Primer color:", colores[0])
 print("Último color:", colores[-1])
 color = input("Ingrese un color: ")
 if color in colores:
@@ -59,7 +59,7 @@ print("Cantidad total de colores:", len(colores))
 
 
 alimentos = ("Pizza", "Hamburguesa", "Ensalada", "Pasta")
-print("Ejercicio 5 - Segundo alimento:", alimentos[1])
+print("Segundo alimento:", alimentos[1])
 print("Último alimento:", alimentos[-1])
 print("Total de alimentos:", len(alimentos))
 
@@ -85,7 +85,7 @@ print("Cantidad total de amigos:", len(amigos))
 
 materias_1 = {"Programación", "Matemática", "Inglés"}
 materias_2 = {"Programación", "Base de Datos", "Inglés"}
-print("Ejercicio 7 - Materias comunes:", materias_1 & materias_2)
+print("Materias comunes:", materias_1 & materias_2)
 print("Exclusivas del primer conjunto:", materias_1 - materias_2)
 print("Todas las materias sin repetir:", materias_1 | materias_2)
 
@@ -99,7 +99,7 @@ print("Todas las materias sin repetir:", materias_1 | materias_2)
 alumnos = {"Juan": 8, "María": 9, "Pedro": 7}
 alumnos["Lucía"] = 10
 alumnos["Pedro"] = 8
-print("Ejercicio 8 - Alumnos y notas:", alumnos)
+print("Alumnos y notas:", alumnos)
 
 #Ejercicio 9 – Verificación de acceso 
 #Crea un diccionario con las claves "usuario" y "contraseña". 
@@ -107,7 +107,7 @@ print("Ejercicio 8 - Alumnos y notas:", alumnos)
 #Muestra “Acceso concedido” o “Acceso denegado”. 
 
 login = {"usuario": "admin", "contraseña": "1234"}
-usuario = input("Ejercicio 9 - Usuario: ")
+usuario = input("Usuario: ")
 contraseña = input("Contraseña: ")
 if usuario == login["usuario"] and contraseña == login["contraseña"]:
     print("Acceso concedido")
@@ -122,7 +122,7 @@ else:
 
 ciudades = {"Mendoza": 1200000, "Córdoba": 1500000, "Rosario": 1300000}
 ciudades.pop("Rosario")
-print("Ejercicio 10 - Diccionario actualizado:", ciudades)
+print("Diccionario actualizado:", ciudades)
 
 #Ejercicio 11 – Diccionario de precios 
 #Crea un diccionario con al menos 4 productos y sus precios. Permite al usuario ingresar el nombre de un producto. 
@@ -130,7 +130,7 @@ print("Ejercicio 10 - Diccionario actualizado:", ciudades)
 
 
 precios = {"pan": 500, "leche": 750, "queso": 1200, "jamón": 1500}
-producto = input("Ejercicio 11 - Ingrese el nombre de un producto: ")
+producto = input("Ingrese el nombre de un producto: ")
 if producto in precios:
     print(f"El precio de {producto} es ${precios[producto]}")
 else:
@@ -144,7 +144,7 @@ else:
 
 numeros = [1, 2, 3, 2, 4, 1, 5, 3]
 conjunto_numeros = set(numeros)
-print("Ejercicio 12 - Lista original:", numeros)
+print("Lista original:", numeros)
 print("Conjunto sin duplicados:", conjunto_numeros)
 
 #Ejercicio 13 – Intersección de conjuntos 
@@ -154,14 +154,14 @@ print("Conjunto sin duplicados:", conjunto_numeros)
 
 a = {1, 2, 3, 4, 5}
 b = {4, 5, 6, 7, 8}
-print("Ejercicio 13 - Elementos en común:", a & b)
+print("Elementos en común:", a & b)
 
 #Ejercicio 14 – Promedio de notas 
 #Crea un diccionario con 3 alumnos y sus notas numéricas. Calcula y muestra el promedio general de todas las notas
 
 notas = {"Juan": 8, "María": 9, "Pedro": 7}
 promedio = sum(notas.values()) / len(notas)
-print("Ejercicio 14 - Promedio general:", promedio)
+print("Promedio general:", promedio)
 
 #Ejercicio 15 – Agregar productos y mostrar precios 
 #Crea un diccionario vacío llamado productos. 
@@ -169,7 +169,7 @@ print("Ejercicio 14 - Promedio general:", promedio)
 
 productos = {}
 for i in range(3):
-    nombre = input("Ejercicio 15 - Ingrese el nombre del producto: ")
+    nombre = input("Ingrese el nombre del producto: ")
     precio = float(input("Ingrese el precio: "))
     productos[nombre] = precio
 
